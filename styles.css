@@ -68,6 +68,10 @@ body {
   background: radial-gradient(circle at top left, #e0f2fe, #f8fafc 40%);
 }
 
+.hero-narrow {
+  padding: 3.5rem 0 2.5rem;
+}
+
 .hero-inner {
   display: flex;
   flex-direction: column;

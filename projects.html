@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shannon Chieng – Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Selected projects by Shannon Chieng – AI product manager & builder."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html#top" class="logo">Shannon Chieng</a>
+      <nav class="nav">
+        <a href="index.html#about">About</a>
+        <a href="projects.html#top">Projects</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Projects hero / intro -->
+    <section class="hero hero-narrow">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h1>Projects</h1>
+          <p class="hero-text">
+            A deeper look at some of the products, tools, and experiments I’ve worked on –
+            from marketplaces to internal platforms and assistants.
+          </p>
+          <div class="hero-actions">
+            <a href="#featured" class="btn primary">Jump to featured</a>
+            <a href="#all-projects" class="btn ghost">See all projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects section -->
+    <section class="section" id="featured">
+      <div class="container">
+        <h2>Featured</h2>
+        <p class="section-intro">
+          These projects represent how I think about product, systems, and impact.
+        </p>
+
+        <div class="grid two-cols">
+          <article class="card" id="animake">
+            <h3>Animake – Anime Creator Marketplace</h3>
+            <p class="card-meta">Side project · Product, Design, Architecture</p>
+            <p>
+              Concept and early design for an anime-focused creator marketplace under
+              a small studio brand. Focused on building trust for buyers and sellers,
+              clear multi-tenant flows, and a scalable data model.
+            </p>
+            <h4>My role</h4>
+            <ul class="bullet-list">
+              <li>Defined the problem, target users, and use cases.</li>
+              <li>Created user journeys for buyers and sellers.</li>
+              <li>Designed the core database schema (orders, payouts, variants, etc.).</li>
+            </ul>
+            <h4>Impact & learnings</h4>
+            <ul class="bullet-list">
+              <li>Clarified what a “minimum lovable” marketplace experience could look like.</li>
+              <li>Explored operational costs, fees, and long-term sustainability.</li>
+            </ul>
+          </article>
+
+          <article class="card" id="mt-dashboard">
+            <h3>Machine Translation Analytics & TM Tooling</h3>
+            <p class="card-meta">Work / Side project · Internal analytics & UX</p>
+            <p>
+              Concept for a machine translation platform analytics dashboard with glossary
+              and translation memory management, built to help teams understand usage
+              and improve content quality.
+            </p>
+            <h4>My role</h4>
+            <ul class="bullet-list">
+              <li>Defined metrics and events for tracking user behaviour.</li>
+              <li>Mapped GA dashboard layouts and visualizations.</li>
+              <li>Outlined requirements for glossary and TM management flows.</li>
+            </ul>
+            <h4>Impact & learnings</h4>
+            <ul class="bullet-list">
+              <li>Provided a clear DRD structure for future implementation.</li>
+              <li>Connected product decisions back to measurable behaviour and quality.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- All projects (shorter summaries) -->
+    <section class="section section-alt" id="all-projects">
+      <div class="container">
+        <h2>More projects</h2>
+        <p class="section-intro">
+          Additional work, experiments, and tools. Some are prototypes, others are ideas
+          I’d like to take further.
+        </p>
+
+        <div class="grid projects-grid">
+          <article class="card" id="demand-assistant">
+            <h3>Demand Management Chat Assistant</h3>
+            <p class="card-meta">Side project · Product & workflows</p>
+            <p>
+              Assistant concept to help teams manage requests (e.g. via Jira), summarise
+              incoming demand, and present useful slices of work for different audiences.
+            </p>
+            <ul class="bullet-list">
+              <li>Outlined use cases (PM, team lead, individual contributor views).</li>
+              <li>Sketched agent design for searching issues and generating summaries.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Portfolio & Personal Systems</h3>
+            <p class="card-meta">Personal · Design & content</p>
+            <p>
+              Ongoing work on consolidating my portfolio, templates, and reflection
+              systems into a coherent setup that’s easy to maintain.
+            </p>
+            <ul class="bullet-list">
+              <li>Defined a simple structure for showcasing projects and experience.</li>
+              <li>Built templates for DRDs, PRDs, and personal reviews.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Other experiments</h3>
+            <p class="card-meta">Sandbox · Prototypes & ideas</p>
+            <p>
+              Smaller prototypes and explorations – from dashboards to assistant flows –
+              mainly used to test ideas quickly and learn.
+            </p>
+            <ul class="bullet-list">
+              <li>Rapid prototypes to validate workflows and UX flows.</li>
+              <li>Explorations into different assistant and automation patterns.</li>
+            </ul>
+          </article>
+        </div>
+
+        <p style="margin-top: 2rem;">
+          Want to know more about any of these? Reach out via
+          <a href="index.html#contact">contact</a> and I’m happy to share details,
+          diagrams, or docs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Back to top quick link -->
+    <a href="#top" class="back-to-top">↑ Back to top</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shannon Chieng. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
