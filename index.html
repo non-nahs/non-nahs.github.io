@@ -153,9 +153,14 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Shannon Chieng. Built with focus and intention.</p>
+                <p>© <span id="year"></span> Your Name. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+    // Optional: auto-update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
