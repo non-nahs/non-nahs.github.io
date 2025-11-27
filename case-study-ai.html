@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Democratizing AI - Shannon Chieng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Shannon Chieng</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="case-studies.html" class="nav-link active">Case Studies</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link contact-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="case-study-hero">
+        <div class="container">
+            <div class="case-study-header">
+                <span class="case-study-tag">Product Strategy • AI/ML • User Experience</span>
+                <h1 class="case-study-title">Democratizing AI: Growing Enterprise Platform Adoption by 40%</h1>
+                <p class="case-study-intro">
+                    How I transformed an enterprise AI assistant platform from a technical tool used by 
+                    developers to an accessible solution for all business users—by eliminating the need 
+                    to write code.
+                </p>
+            </div>
+            
+            <div class="metrics-bar">
+                <div class="metric-item">
+                    <span class="metric-number">40%</span>
+                    <span class="metric-description">Adoption Increase</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">3hrs → 10min</span>
+                    <span class="metric-description">Setup Time Reduction</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">15+</span>
+                    <span class="metric-description">Agent Types Supported</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">5</span>
+                    <span class="metric-description">Departments Onboarded</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="cs-section">
+                    <h2 class="cs-heading">The Problem</h2>
+                    <div class="cs-content">
+                        <p class="cs-text">
+                            When I joined the AI product team at Merck Sharp & Dohme, we had built a powerful 
+                            enterprise AI assistant platform capable of automating complex workflows. On paper, 
+                            it should have been a massive success. In reality, adoption was stagnant at around 
+                            12% across the organization.
+                        </p>
+                        <p class="cs-text">
+                            The platform could do amazing things—integrate with Jira and Confluence, process 
+                            natural language requests, orchestrate multi-step workflows—but there was a critical 
+                            barrier: only technical users could configure these AI assistants. Setting up a new 
+                            assistant required 3+ hours of coding, understanding API endpoints, and wrestling 
+                            with configuration files.
+                        </p>
+                        <div class="callout">
+                            <p class="callout-text">
+                                <strong>Key insight from user research:</strong> Business users desperately 
+                                wanted AI automation but couldn't justify asking engineering teams to spend 
+                                hours configuring assistants for their specific needs. The technical barrier 
+                                was creating a bottleneck where demand existed but couldn't be met.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">My Role & Constraints</h2>
+                    <div class="cs-content">
+                        <p class="cs-text">
+                            <strong>Role:</strong> Product Manager owning the AI assistant platform roadmap
+                        </p>
+                        <p class="cs-text">
+                            <strong>Team:</strong> Led squad of 3 ML engineers, 2 backend engineers, 1 UX designer
+                        </p>
+                        <p class="cs-text">
+                            <strong>Timeline:</strong> 4-month development cycle from concept to beta launch
+                        </p>
+                        <p class="cs-text">
+                            <strong>Key constraints:</strong> Had to maintain backward compatibility with existing 
+                            configured assistants, ensure enterprise security compliance, and keep latency under 
+                            acceptable thresholds for natural language processing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">The Approach</h2>
+                    <div class="cs-content">
+                        <h3 class="cs-subheading">1. Understanding the Real Problem</h3>
+                        <p class="cs-text">
+                            I started by conducting 25+ interviews across different departments—marketing, HR, 
+                            finance, operations. The pattern was clear: people didn't lack ideas for how AI could 
+                            help them; they lacked the ability to act on those ideas.
+                        </p>
+                        <p class="cs-text">
+                            One HR manager told me: "I know exactly what I need—an assistant that pulls performance 
+                            review data from our system and generates summary reports. But I'd need to write a ticket, 
+                            wait 3 weeks for engineering time, and then iterate through multiple rounds of changes. 
+                            It's just not worth it."
+                        </p>
+
+                        <h3 class="cs-subheading">2. Defining the Solution</h3>
+                        <p class="cs-text">
+                            The insight was simple but powerful: what if users could configure AI assistants the 
+                            same way they interact with them—through natural language conversation?
+                        </p>
+                        <p class="cs-text">
+                            Instead of writing configuration files, users would simply describe what they wanted 
+                            the assistant to do. The system would extract the necessary parameters, validate the 
+                            configuration, and set everything up automatically.
+                        </p>
+
+                        <h3 class="cs-subheading">3. Prioritization & Tradeoffs</h3>
+                        <p class="cs-text">
+                            We had competing priorities. Engineering wanted to add more advanced agent capabilities. 
+                            Sales wanted integrations with external tools. But I made the call to prioritize 
+                            accessibility over features.
+                        </p>
+                        <div class="callout callout-orange">
+                            <p class="callout-text">
+                                <strong>Key decision:</strong> We said no to 5 feature requests to focus entirely 
+                                on the no-code interface. The reasoning: expanding features for the 12% who already 
+                                used the platform wouldn't move the needle. Making it accessible to the other 88% 
+                                would transform the business impact.
+                            </p>
+                        </div>
+
+                        <h3 class="cs-subheading">4. Technical Implementation</h3>
+                        <p class="cs-text">
+                            Working closely with ML engineers, we designed a system that could:
+                        </p>
+                        <ul class="cs-list">
+                            <li>Parse natural language descriptions to extract intent and parameters</li>
+                            <li>Validate configurations against enterprise security policies</li>
+                            <li>Generate appropriate API calls and workflow definitions</li>
+                            <li>Provide real-time feedback on configuration validity</li>
+                            <li>Support 15+ different agent types with varying complexity</li>
+                        </ul>
+
+                        <h3 class="cs-subheading">5. Validation & Iteration</h3>
+                        <p class="cs-text">
+                            We launched a private beta with 20 non-technical users across 3 departments. The early 
+                            feedback was illuminating:
+                        </p>
+                        <ul class="cs-list">
+                            <li><strong>Success rate:</strong> 85% of users could configure basic assistants on 
+                            their first attempt</li>
+                            <li><strong>Time to value:</strong> Setup time dropped from 3+ hours to under 10 minutes</li>
+                            <li><strong>Key learning:</strong> Users needed better error messages when 
+                            configurations failed validation—we iterated on the feedback mechanism</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">The Solution</h2>
+                    <div class="cs-content">
+                        <p class="cs-text">
+                            We shipped a conversational configuration interface that allows any user to set up 
+                            AI assistants by simply describing what they need. The system handles all the 
+                            technical complexity behind the scenes.
+                        </p>
+                        <p class="cs-text">
+                            <strong>Example flow:</strong> A marketing manager types: "Create an assistant that 
+                            monitors our social media mentions in Slack, summarizes the sentiment weekly, and 
+                            posts reports to #marketing-insights." The system extracts the data source (Slack), 
+                            frequency (weekly), action (sentiment analysis and summary), and output destination 
+                            (#marketing-insights), then configures everything automatically.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">The Outcome</h2>
+                    <div class="cs-content">
+                        <h3 class="cs-subheading">Quantitative Results</h3>
+                        <ul class="cs-list">
+                            <li><strong>40% increase in platform adoption</strong> within 3 months of launch</li>
+                            <li><strong>Setup time reduced from 3+ hours to <10 minutes</strong> for typical use cases</li>
+                            <li><strong>15+ different agent types</strong> now configurable without coding</li>
+                            <li><strong>Expanded to 5 new departments</strong> that previously couldn't use the platform</li>
+                            <li><strong>Engineering time freed up:</strong> Developers no longer spending hours on 
+                            configuration requests</li>
+                        </ul>
+
+                        <h3 class="cs-subheading">Qualitative Impact</h3>
+                        <p class="cs-text">
+                            The feedback that really mattered came from users themselves:
+                        </p>
+                        <div class="quote-block">
+                            <p class="quote-text">
+                                "I finally feel like AI is for people like me, not just engineers. I set up three 
+                                assistants last week that are already saving my team hours of manual work."
+                            </p>
+                            <p class="quote-author">— Marketing Manager, Global Brand Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">Key Learnings</h2>
+                    <div class="cs-content">
+                        <p class="cs-text">
+                            <strong>1. Accessibility > Features:</strong> The most powerful technology is useless 
+                            if people can't access it. Sometimes the biggest impact comes from removing barriers, 
+                            not adding capabilities.
+                        </p>
+                        <p class="cs-text">
+                            <strong>2. Talk to non-users:</strong> The most valuable insights came from people who 
+                            WEREN'T using the platform. Existing users would have asked for incremental improvements. 
+                            Non-users told us why they couldn't adopt at all.
+                        </p>
+                        <p class="cs-text">
+                            <strong>3. Saying no is strategic:</strong> Deprioritizing feature requests was 
+                            uncomfortable but necessary. The temptation to say yes to everything would have diluted 
+                            focus and delayed the accessibility breakthrough.
+                        </p>
+                        <p class="cs-text">
+                            <strong>4. What I'd do differently:</strong> I would have launched the beta sooner. 
+                            We spent an extra month perfecting edge cases that early users never encountered. 
+                            Faster iteration cycles would have accelerated learning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cs-navigation">
+                    <a href="case-study-developer.html" class="cs-nav-link">
+                        Next Case Study: Fixing Developer Experience →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shannon Chieng</h3>
+                    <p>AI Product Manager based in Singapore</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:shan.chieng@gmail.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shannon Chieng. Built with focus and intention.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .case-study-hero {
+            background: linear-gradient(135deg, #E8F4FD 0%, #FFFFFF 100%);
+            padding: 80px 0 40px;
+        }
+
+        .case-study-header {
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+        .case-study-tag {
+            display: inline-block;
+            background: var(--sky-blue);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .case-study-title {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--black);
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        .case-study-intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: var(--medium-gray);
+        }
+
+        .metrics-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            padding: 40px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-number {
+            display: block;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--sky-blue);
+            margin-bottom: 8px;
+        }
+
+        .metric-description {
+            display: block;
+            font-size: 14px;
+            color: var(--medium-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .case-study-content {
+            padding: 80px 0;
+        }
+
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cs-section {
+            margin-bottom: 60px;
+        }
+
+        .cs-heading {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 24px;
+            position: relative;
+            padding-bottom: 16px;
+        }
+
+        .cs-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--claude-orange);
+            border-radius: 2px;
+        }
+
+        .cs-subheading {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--sky-blue);
+            margin: 32px 0 16px;
+        }
+
+        .cs-text {
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+        }
+
+        .cs-list {
+            margin: 20px 0 20px 24px;
+            color: var(--medium-gray);
+        }
+
+        .cs-list li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .callout {
+            background: #E8F4FD;
+            border-left: 4px solid var(--sky-blue);
+            padding: 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+        }
+
+        .callout-orange {
+            background: #FFF4ED;
+            border-left-color: var(--claude-orange);
+        }
+
+        .callout-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            margin: 0;
+        }
+
+        .quote-block {
+            background: var(--light-gray);
+            padding: 32px;
+            border-radius: 12px;
+            margin: 32px 0;
+        }
+
+        .quote-text {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            margin-bottom: 16px;
+        }
+
+        .quote-author {
+            font-size: 16px;
+            color: var(--medium-gray);
+            font-weight: 600;
+        }
+
+        .cs-navigation {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid var(--light-gray);
+        }
+
+        .cs-nav-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--claude-orange);
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: gap 0.3s;
+            gap: 8px;
+        }
+
+        .cs-nav-link:hover {
+            gap: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .case-study-title {
+                font-size: 32px;
+            }
+
+            .metrics-bar {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
