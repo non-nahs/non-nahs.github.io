@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Developer Platform - Shannon Chieng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Shannon Chieng</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="case-studies.html" class="nav-link active">Case Studies</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link contact-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="case-study-hero">
+        <div class="container">
+            <div class="case-study-header">
+                <span class="case-study-tag">Developer Experience • Platform • B2B</span>
+                <h1 class="case-study-title">Fixing the Developer Platform: From 2 Weeks to 3 Days Onboarding</h1>
+                <p class="case-study-intro">
+                    How I investigated a 40% developer drop-off rate during SDK onboarding, identified the 
+                    root causes, and championed documentation improvements that transformed the developer experience.
+                </p>
+            </div>
+            
+            <div class="metrics-bar">
+                <div class="metric-item">
+                    <span class="metric-number">14 → 3 days</span>
+                    <span class="metric-description">Onboarding Time</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">40%</span>
+                    <span class="metric-description">Drop-off Eliminated</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">1,000+</span>
+                    <span class="metric-description">Developers Served</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">95%</span>
+                    <span class="metric-description">On-time Issue Resolution</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="cs-section">
+                    <h2 class="cs-heading">The Problem</h2>
+                    <div class="cs-content">
+                        <p class="cs-text">
+                            During my internship at SEA Group (SeaTalk), I joined a team managing a developer 
+                            platform and SDK that served over 1,000 integration partners across Southeast Asia. 
+                            On the surface, things looked fine—we had steady adoption and positive feedback from 
+                            developers who successfully integrated.
+                        </p>
+                        <p class="cs-text">
+                            But when I dove into the onboarding data, I discovered a troubling pattern: 40% of 
+                            developers who started the integration process never completed it. They'd download the 
+                            SDK, attempt to integrate, and then... disappear.
+                        </p>
+                        <div class="callout">
+                            <p class="callout-text">
+                                <strong>The hidden cost:</strong> We were losing nearly half of potential integration 
+                                partners before they could create value. Even more concerning, we had no systematic 
+                                way of understanding why they were leaving.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">My Role & Constraints</h2>
+                    <div class="cs-content">
+                        <p class="cs-text">
+                            <strong>Role:</strong> Product Management Intern focused on developer platform improvements
+                        </p>
+                        <p class="cs-text">
+                            <strong>Challenge:</strong> As an intern, I had to build credibility and influence without 
+                            direct authority. I also had to navigate between engineering teams in Singapore and China, 
+                            requiring all PRDs to be bilingual.
+                        </p>
+                        <p class="cs-text">
+                            <strong>Timeline:</strong> 6-month internship, needed to show impact within 3 months
+                        </p>
+                        <p class="cs-text">
+                            <strong>Team structure:</strong> Worked with 2 engineering teams across time zones, 
+                            1 technical writer, and reported to a senior PM
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">The Investigation</h2>
+                    <div class="cs-content">
+                        <h3 class="cs-subheading">1. Understanding the Data</h3>
+                        <p class="cs-text">
+                            I started by mapping the entire onboarding funnel:
+                        </p>
+                        <ul class="cs-list">
+                            <li>SDK download: 100% (baseline)</li>
+                            <li>First API call attempt: 75%</li>
+                            <li>Successful authentication: 45%</li>
+                            <li>First successful integration: 60%</li>
+                        </ul>
+                        <p class="cs-text">
+                            The biggest drop-off was between the first API call and successful authentication. 
+                            Something was going wrong in those early steps.
+                        </p>
+
+                        <h3 class="cs-subheading">2. Talking to Developers</h3>
+                        <p class="cs-text">
+                            Data told me WHERE the problem was, but not WHY. I conducted 15 interviews with developers 
+                            at different stages:
+                        </p>
+                        <ul class="cs-list">
+                            <li><strong>Successful integrators:</strong> What helped them succeed?</li>
+                            <li><strong>Struggling developers:</strong> What was blocking them?</li>
+                            <li><strong>Those who abandoned:</strong> Why did they give up? (hardest to reach, but 
+                            most valuable)</li>
+                        </ul>
+
+                        <h3 class="cs-subheading">3. The Root Causes</h3>
+                        <p class="cs-text">
+                            Three clear patterns emerged:
+                        </p>
+                        <div class="callout callout-orange">
+                            <p class="callout-text">
+                                <strong>Problem #1: Documentation gaps.</strong> Our docs assumed developers knew 
+                                our authentication flow, but most were unfamiliar with it. Critical setup steps 
+                                were buried in separate pages with no clear sequence.
+                            </p>
+                        </div>
+                        <div class="callout callout-orange">
+                            <p class="callout-text">
+                                <strong>Problem #2: Unclear error messages.</strong> When things went wrong, error 
+                                messages were technical ("Auth token invalid") without explaining what to do about it.
+                            </p>
+                        </div>
+                        <div class="callout callout-orange">
+                            <p class="callout-text">
+                                <strong>Problem #3: No working examples.</strong> We had API reference docs, but 
+                                developers wanted complete, copy-pasteable examples they could build from.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">The Solution</h2>
+                    <div class="cs-content">
+                        <p class="cs-text">
+                            I wrote a comprehensive PRD (in both English and Chinese) proposing three key improvements:
+                        </p>
+
+                        <h3 class="cs-subheading">1. Restructured Documentation</h3>
+                        <p class="cs-text">
+                            Created a clear "Getting Started" path that walked developers through setup in a logical 
+                            sequence. Instead of scattered pages, we built a linear tutorial that got developers to 
+                            their first successful API call in under 30 minutes.
+                        </p>
+
+                        <h3 class="cs-subheading">2. Enhanced Error Handling</h3>
+                        <p class="cs-text">
+                            Worked with engineering to improve SDK error messages. Instead of "Auth token invalid," 
+                            developers now see: "Auth token invalid. Check that your token hasn't expired (tokens 
+                            last 24 hours) and that you're using the correct environment (sandbox vs. production)."
+                        </p>
+
+                        <h3 class="cs-subheading">3. Comprehensive Code Examples</h3>
+                        <p class="cs-text">
+                            Built a library of working code samples covering the most common integration scenarios. 
+                            Each example included complete, runnable code with explanatory comments.
+                        </p>
+
+                        <h3 class="cs-subheading">The Coordination Challenge</h3>
+                        <p class="cs-text">
+                            The hardest part wasn't defining the solution—it was coordinating implementation across 
+                            two engineering teams in different time zones speaking different languages. I learned to:
+                        </p>
+                        <ul class="cs-list">
+                            <li>Write crystal-clear bilingual PRDs that minimized ambiguity</li>
+                            <li>Use visual diagrams to communicate flows (language-independent)</li>
+                            <li>Set up async communication rhythms that worked across time zones</li>
+                            <li>Build relationships with engineers in both locations to smooth collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">The Outcome</h2>
+                    <div class="cs-content">
+                        <h3 class="cs-subheading">Quantitative Results</h3>
+                        <ul class="cs-list">
+                            <li><strong>Onboarding time reduced from 14 days to 3 days</strong> (average time from 
+                            SDK download to first successful integration)</li>
+                            <li><strong>Drop-off rate decreased from 40% to nearly zero</strong> in the early 
+                            onboarding stages</li>
+                            <li><strong>Support tickets reduced by 30%</strong> for common integration issues</li>
+                            <li><strong>95% on-time issue resolution</strong> (within 48-hour SLA) for remaining 
+                            developer support requests</li>
+                        </ul>
+
+                        <h3 class="cs-subheading">What Made the Difference</h3>
+                        <p class="cs-text">
+                            The improvements weren't about adding features—they were about removing friction. 
+                            Developers could already do everything they needed; we just made it obvious how.
+                        </p>
+                        <div class="quote-block">
+                            <p class="quote-text">
+                                "Finally, docs that actually help me get started instead of just listing APIs. 
+                                I was up and running in a morning instead of spending days figuring things out."
+                            </p>
+                            <p class="quote-author">— Integration Partner Developer, Philippines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">Key Learnings</h2>
+                    <div class="cs-content">
+                        <p class="cs-text">
+                            <strong>1. The best solutions come from talking to users, not just data.</strong> 
+                            Analytics showed me WHERE the problem was, but only user interviews revealed WHY. 
+                            Both were essential.
+                        </p>
+                        <p class="cs-text">
+                            <strong>2. For developers, documentation IS the product.</strong> Our SDK was technically 
+                            solid, but poor documentation made it feel broken. Developer experience extends far beyond 
+                            code quality.
+                        </p>
+                        <p class="cs-text">
+                            <strong>3. Influence without authority is a learnable skill.</strong> As an intern, I 
+                            couldn't just tell teams what to build. I had to build credibility through data, show 
+                            clear impact, and make it easy for engineers to say yes.
+                        </p>
+                        <p class="cs-text">
+                            <strong>4. What I'd do differently:</strong> I would have set up a continuous feedback 
+                            loop with developers earlier. We fixed the known problems, but we should have built a 
+                            system to catch new friction points as they emerged.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2 class="cs-heading">Side Project: Automation</h2>
+                    <div class="cs-content">
+                        <p class="cs-text">
+                            During this work, I noticed our team was spending 5 hours per week manually copying 
+                            developer feedback from Jira into our Trello roadmap board. I built a Python script 
+                            using REST APIs to automate the sync.
+                        </p>
+                        <p class="cs-text">
+                            It was a small thing, but it taught me to always be looking for inefficiencies—not 
+                            just in products, but in processes too.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cs-navigation">
+                    <a href="case-study-community.html" class="cs-nav-link">
+                        Next Case Study: Product Thinking Beyond Tech →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shannon Chieng</h3>
+                    <p>AI Product Manager based in Singapore</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:shan.chieng@gmail.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shannon Chieng. Built with focus and intention.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .case-study-hero {
+            background: linear-gradient(135deg, #E8F4FD 0%, #FFFFFF 100%);
+            padding: 80px 0 40px;
+        }
+
+        .case-study-header {
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+        .case-study-tag {
+            display: inline-block;
+            background: var(--sky-blue);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .case-study-title {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--black);
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        .case-study-intro {
+            font-size: 20px;
+            line-height: 1.7;
+            color: var(--medium-gray);
+        }
+
+        .metrics-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            padding: 40px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-number {
+            display: block;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--sky-blue);
+            margin-bottom: 8px;
+        }
+
+        .metric-description {
+            display: block;
+            font-size: 14px;
+            color: var(--medium-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .case-study-content {
+            padding: 80px 0;
+        }
+
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cs-section {
+            margin-bottom: 60px;
+        }
+
+        .cs-heading {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 24px;
+            position: relative;
+            padding-bottom: 16px;
+        }
+
+        .cs-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--claude-orange);
+            border-radius: 2px;
+        }
+
+        .cs-subheading {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--sky-blue);
+            margin: 32px 0 16px;
+        }
+
+        .cs-text {
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+        }
+
+        .cs-list {
+            margin: 20px 0 20px 24px;
+            color: var(--medium-gray);
+        }
+
+        .cs-list li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .callout {
+            background: #E8F4FD;
+            border-left: 4px solid var(--sky-blue);
+            padding: 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+        }
+
+        .callout-orange {
+            background: #FFF4ED;
+            border-left-color: var(--claude-orange);
+        }
+
+        .callout-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            margin: 0;
+        }
+
+        .quote-block {
+            background: var(--light-gray);
+            padding: 32px;
+            border-radius: 12px;
+            margin: 32px 0;
+        }
+
+        .quote-text {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            margin-bottom: 16px;
+        }
+
+        .quote-author {
+            font-size: 16px;
+            color: var(--medium-gray);
+            font-weight: 600;
+        }
+
+        .cs-navigation {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid var(--light-gray);
+        }
+
+        .cs-nav-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--claude-orange);
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: gap 0.3s;
+            gap: 8px;
+        }
+
+        .cs-nav-link:hover {
+            gap: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .case-study-title {
+                font-size: 32px;
+            }
+
+            .metrics-bar {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,172 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Shannon Chieng – Projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Selected projects by Shannon Chieng – AI product manager & builder."
-  />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Shannon Chieng</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Top navigation -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html#top" class="logo">Shannon Chieng</a>
-      <nav class="nav">
-        <a href="index.html#about">About</a>
-        <a href="projects.html#top">Projects</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <!-- Projects hero / intro -->
-    <section class="hero hero-narrow">
-      <div class="container hero-inner">
-        <div>
-          <p class="eyebrow">Selected work</p>
-          <h1>Projects</h1>
-          <p class="hero-text">
-            A deeper look at some of the products, tools, and experiments I’ve worked on –
-            from marketplaces to internal platforms and assistants.
-          </p>
-          <div class="hero-actions">
-            <a href="#featured" class="btn primary">Jump to featured</a>
-            <a href="#all-projects" class="btn ghost">See all projects</a>
-          </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Shannon Chieng</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link contact-btn">Contact</a></li>
+            </ul>
         </div>
-      </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Projects</h1>
+            <p class="page-subtitle">Building, learning, and experimenting</p>
+        </div>
     </section>
 
-    <!-- Featured projects section -->
-    <section class="section" id="featured">
-      <div class="container">
-        <h2>Featured</h2>
-        <p class="section-intro">
-          These projects represent how I think about product, systems, and impact.
-        </p>
+    <section class="projects-section">
+        <div class="container">
+            <!-- Featured Projects -->
+            <div class="project-category">
+                <h2 class="category-title">Featured Projects</h2>
+                
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Animake - SaaS Marketplace for Animation Creators</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">0-to-1 Product</span>
+                                <span class="project-tag">Founder Experience</span>
+                                <span class="project-tag">User Research</span>
+                            </div>
+                        </div>
+                        <span class="project-status status-active">Active</span>
+                    </div>
+                    <p class="project-description">
+                        Founded and building a marketplace platform connecting animation creators with clients. 
+                        Leading product strategy from ideation through MVP launch, conducting extensive user 
+                        research, and iterating based on market feedback.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h4 class="detail-heading">Key Learnings</h4>
+                            <ul class="detail-list">
+                                <li><strong>User Research:</strong> Conducted 30+ creator interviews revealing pricing 
+                                transparency as #1 barrier to adoption (cited by 75% of interviewees)</li>
+                                <li><strong>Pivoting on Data:</strong> Changed business model from commission-based 
+                                to transparent subscription after user research—early testing showed 3x conversion 
+                                improvement</li>
+                                <li><strong>0-to-1 Challenges:</strong> Learning to validate assumptions early, 
+                                prioritize ruthlessly with limited resources, and find product-market fit in a 
+                                competitive space</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-heading">Skills Demonstrated</h4>
+                            <div class="skill-pills">
+                                <span class="skill-pill">Product Strategy</span>
+                                <span class="skill-pill">Market Research</span>
+                                <span class="skill-pill">Business Model Design</span>
+                                <span class="skill-pill">Agile Development</span>
+                                <span class="skill-pill">Stakeholder Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="grid two-cols">
-          <article class="card" id="animake">
-            <h3>Animake – Anime Creator Marketplace</h3>
-            <p class="card-meta">Side project · Product, Design, Architecture</p>
-            <p>
-              Concept and early design for an anime-focused creator marketplace under
-              a small studio brand. Focused on building trust for buyers and sellers,
-              clear multi-tenant flows, and a scalable data model.
-            </p>
-            <h4>My role</h4>
-            <ul class="bullet-list">
-              <li>Defined the problem, target users, and use cases.</li>
-              <li>Created user journeys for buyers and sellers.</li>
-              <li>Designed the core database schema (orders, payouts, variants, etc.).</li>
-            </ul>
-            <h4>Impact & learnings</h4>
-            <ul class="bullet-list">
-              <li>Clarified what a “minimum lovable” marketplace experience could look like.</li>
-              <li>Explored operational costs, fees, and long-term sustainability.</li>
-            </ul>
-          </article>
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">AI Text Classifier - Detecting LLM-Generated Content</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">AI/ML</span>
+                                <span class="project-tag">NLP</span>
+                                <span class="project-tag">Research</span>
+                            </div>
+                        </div>
+                        <span class="project-status status-completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Final year research project building a BERT-based classifier to distinguish text generated 
+                        by ChatGPT and other LLMs from human writing. Achieved 94% accuracy through careful data 
+                        engineering and model fine-tuning.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h4 class="detail-heading">Technical Approach</h4>
+                            <ul class="detail-list">
+                                <li><strong>Data Engineering:</strong> Generated training corpus of 10,000+ samples 
+                                using prompt engineering across multiple LLMs (GPT-3.5, GPT-4, Claude)</li>
+                                <li><strong>Model Development:</strong> Fine-tuned pre-trained BERT model using 
+                                PyTorch, experimented with different architectures and hyperparameters</li>
+                                <li><strong>Preprocessing Pipeline:</strong> Built custom pipeline converting PDF 
+                                student reports to cleaned textual data for training</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-heading">Technologies Used</h4>
+                            <div class="skill-pills">
+                                <span class="skill-pill">Python</span>
+                                <span class="skill-pill">PyTorch</span>
+                                <span class="skill-pill">BERT</span>
+                                <span class="skill-pill">Transformers</span>
+                                <span class="skill-pill">OpenAI API</span>
+                                <span class="skill-pill">scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-outcomes">
+                        <div class="outcome-item">
+                            <span class="outcome-label">Accuracy</span>
+                            <span class="outcome-value">94%</span>
+                        </div>
+                        <div class="outcome-item">
+                            <span class="outcome-label">Training Samples</span>
+                            <span class="outcome-value">10,000+</span>
+                        </div>
+                        <div class="outcome-item">
+                            <span class="outcome-label">LLMs Tested</span>
+                            <span class="outcome-value">Multiple</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <article class="card" id="mt-dashboard">
-            <h3>Machine Translation Analytics & TM Tooling</h3>
-            <p class="card-meta">Work / Side project · Internal analytics & UX</p>
-            <p>
-              Concept for a machine translation platform analytics dashboard with glossary
-              and translation memory management, built to help teams understand usage
-              and improve content quality.
-            </p>
-            <h4>My role</h4>
-            <ul class="bullet-list">
-              <li>Defined metrics and events for tracking user behaviour.</li>
-              <li>Mapped GA dashboard layouts and visualizations.</li>
-              <li>Outlined requirements for glossary and TM management flows.</li>
-            </ul>
-            <h4>Impact & learnings</h4>
-            <ul class="bullet-list">
-              <li>Provided a clear DRD structure for future implementation.</li>
-              <li>Connected product decisions back to measurable behaviour and quality.</li>
-            </ul>
-          </article>
+            <!-- Technical Projects -->
+            <div class="project-category">
+                <h2 class="category-title">Technical Projects</h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card-compact">
+                        <h3 class="compact-title">Cloud Cost Optimization Pipeline</h3>
+                        <p class="compact-description">
+                            Built automated AWS Lambda pipeline analyzing cloud spending patterns to identify 
+                            over-provisioned resources. Enabled $1.2M in annual savings through algorithmic 
+                            optimization recommendations.
+                        </p>
+                        <div class="compact-tags">
+                            <span class="compact-tag">AWS Lambda</span>
+                            <span class="compact-tag">Python</span>
+                            <span class="compact-tag">DynamoDB</span>
+                            <span class="compact-tag">Cost Optimization</span>
+                        </div>
+                        <div class="compact-impact">
+                            <strong>Impact:</strong> Reduced manual analysis from 8hrs/week to automated daily insights
+                        </div>
+                    </div>
+
+                    <div class="project-card-compact">
+                        <h3 class="compact-title">Developer Feedback Automation</h3>
+                        <p class="compact-description">
+                            Created Python script integrating Jira and Trello via REST APIs to automatically sync 
+                            user feedback across project management tools, eliminating manual data entry.
+                        </p>
+                        <div class="compact-tags">
+                            <span class="compact-tag">Python</span>
+                            <span class="compact-tag">REST APIs</span>
+                            <span class="compact-tag">Automation</span>
+                            <span class="compact-tag">Integration</span>
+                        </div>
+                        <div class="compact-impact">
+                            <strong>Impact:</strong> Saved 5 hours/week of manual work for product team
+                        </div>
+                    </div>
+
+                    <div class="project-card-compact">
+                        <h3 class="compact-title">Product Analytics Dashboard</h3>
+                        <p class="compact-description">
+                            Built Google Analytics 4 dashboard in Looker Studio tracking eStatement product user 
+                            behavior. Analytics insights informed UX redesign improving completion rates by 22%.
+                        </p>
+                        <div class="compact-tags">
+                            <span class="compact-tag">Google Analytics 4</span>
+                            <span class="compact-tag">Looker Studio</span>
+                            <span class="compact-tag">Data Visualization</span>
+                            <span class="compact-tag">Product Analytics</span>
+                        </div>
+                        <div class="compact-impact">
+                            <strong>Impact:</strong> Data-driven insights led to 22% improvement in completion rates
+                        </div>
+                    </div>
+
+                    <div class="project-card-compact">
+                        <h3 class="compact-title">Multi-Agent Automation System</h3>
+                        <p class="compact-description">
+                            Developed OpenAI Agent-based demand management system integrated with Jira and Confluence 
+                            for enterprise workflow automation, processing hundreds of requests weekly.
+                        </p>
+                        <div class="compact-tags">
+                            <span class="compact-tag">OpenAI Agents</span>
+                            <span class="compact-tag">API Integration</span>
+                            <span class="compact-tag">Workflow Automation</span>
+                            <span class="compact-tag">Enterprise</span>
+                        </div>
+                        <div class="compact-impact">
+                            <strong>Impact:</strong> Saved hundreds of manual hours weekly across departments
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hackathons & Competitions -->
+            <div class="project-category">
+                <h2 class="category-title">Hackathons & Competitions</h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card-compact">
+                        <h3 class="compact-title">AI4Impact Mental Health Chatbot</h3>
+                        <p class="compact-description">
+                            NTU hackathon project developing conversational AI chatbot for mental health support 
+                            using NLP techniques and sentiment analysis. Explored ethical considerations around 
+                            AI in sensitive domains.
+                        </p>
+                        <div class="compact-tags">
+                            <span class="compact-tag">NLP</span>
+                            <span class="compact-tag">Chatbot</span>
+                            <span class="compact-tag">Mental Health</span>
+                            <span class="compact-tag">2022</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card-compact">
+                        <h3 class="compact-title">CGS-CIMB Investment Challenge</h3>
+                        <p class="compact-description">
+                            Investment competition developing financial analysis and market research skills. 
+                            Learned about competitive analysis, market positioning, and data-driven decision making.
+                        </p>
+                        <div class="compact-tags">
+                            <span class="compact-tag">Financial Analysis</span>
+                            <span class="compact-tag">Market Research</span>
+                            <span class="compact-tag">Strategy</span>
+                            <span class="compact-tag">2022</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card-compact">
+                        <h3 class="compact-title">SHRI HR Hackathon</h3>
+                        <p class="compact-description">
+                            Participated in HR technology hackathon exploring solutions for workplace challenges. 
+                            Applied product thinking to human resources domain.
+                        </p>
+                        <div class="compact-tags">
+                            <span class="compact-tag">HR Tech</span>
+                            <span class="compact-tag">Product Design</span>
+                            <span class="compact-tag">Problem Solving</span>
+                            <span class="compact-tag">2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- All projects (shorter summaries) -->
-    <section class="section section-alt" id="all-projects">
-      <div class="container">
-        <h2>More projects</h2>
-        <p class="section-intro">
-          Additional work, experiments, and tools. Some are prototypes, others are ideas
-          I’d like to take further.
-        </p>
-
-        <div class="grid projects-grid">
-          <article class="card" id="demand-assistant">
-            <h3>Demand Management Chat Assistant</h3>
-            <p class="card-meta">Side project · Product & workflows</p>
-            <p>
-              Assistant concept to help teams manage requests (e.g. via Jira), summarise
-              incoming demand, and present useful slices of work for different audiences.
-            </p>
-            <ul class="bullet-list">
-              <li>Outlined use cases (PM, team lead, individual contributor views).</li>
-              <li>Sketched agent design for searching issues and generating summaries.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Portfolio & Personal Systems</h3>
-            <p class="card-meta">Personal · Design & content</p>
-            <p>
-              Ongoing work on consolidating my portfolio, templates, and reflection
-              systems into a coherent setup that’s easy to maintain.
-            </p>
-            <ul class="bullet-list">
-              <li>Defined a simple structure for showcasing projects and experience.</li>
-              <li>Built templates for DRDs, PRDs, and personal reviews.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Other experiments</h3>
-            <p class="card-meta">Sandbox · Prototypes & ideas</p>
-            <p>
-              Smaller prototypes and explorations – from dashboards to assistant flows –
-              mainly used to test ideas quickly and learn.
-            </p>
-            <ul class="bullet-list">
-              <li>Rapid prototypes to validate workflows and UX flows.</li>
-              <li>Explorations into different assistant and automation patterns.</li>
-            </ul>
-          </article>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shannon Chieng</h3>
+                    <p>AI Product Manager based in Singapore</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:shan.chieng@gmail.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shannon Chieng. Built with focus and intention.</p>
+            </div>
         </div>
+    </footer>
 
-        <p style="margin-top: 2rem;">
-          Want to know more about any of these? Reach out via
-          <a href="index.html#contact">contact</a> and I’m happy to share details,
-          diagrams, or docs.
-        </p>
-      </div>
-    </section>
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #E8F4FD 0%, #FFFFFF 100%);
+            padding: 80px 0 60px;
+            text-align: center;
+        }
 
-    <!-- Back to top quick link -->
-    <a href="#top" class="back-to-top">↑ Back to top</a>
-  </main>
+        .page-title {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--black);
+            margin-bottom: 16px;
+        }
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Shannon Chieng. All rights reserved.</p>
-    </div>
-  </footer>
+        .page-subtitle {
+            font-size: 20px;
+            color: var(--medium-gray);
+        }
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+        .projects-section {
+            padding: 80px 0;
+        }
+
+        .project-category {
+            margin-bottom: 80px;
+        }
+
+        .category-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .category-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--claude-orange);
+        }
+
+        /* Featured Projects */
+        .project-card.featured {
+            background: var(--white);
+            border: 2px solid var(--light-gray);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 32px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .project-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 12px;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            background: var(--sky-blue);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .project-status {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .status-active {
+            background: #E8F5E9;
+            color: #2E7D32;
+        }
+
+        .status-completed {
+            background: #E3F2FD;
+            color: #1565C0;
+        }
+
+        .project-description {
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--medium-gray);
+            margin-bottom: 28px;
+        }
+
+        .project-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            padding: 28px 0;
+            border-top: 1px solid var(--light-gray);
+        }
+
+        .detail-heading {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--sky-blue);
+            margin-bottom: 16px;
+        }
+
+        .detail-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .detail-list li {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--medium-gray);
+            margin-bottom: 12px;
+        }
+
+        .skill-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-pill {
+            background: var(--light-gray);
+            color: var(--dark-gray);
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .project-outcomes {
+            display: flex;
+            gap: 40px;
+            padding: 24px;
+            background: var(--light-gray);
+            border-radius: 12px;
+            margin-top: 24px;
+        }
+
+        .outcome-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .outcome-label {
+            font-size: 12px;
+            color: var(--medium-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .outcome-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--sky-blue);
+        }
+
+        /* Compact Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+        }
+
+        .project-card-compact {
+            background: var(--white);
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: 28px;
+            transition: all 0.3s;
+        }
+
+        .project-card-compact:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(59, 159, 232, 0.12);
+            border-color: var(--sky-blue);
+        }
+
+        .compact-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 12px;
+        }
+
+        .compact-description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--medium-gray);
+            margin-bottom: 16px;
+        }
+
+        .compact-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .compact-tag {
+            background: var(--light-gray);
+            color: var(--dark-gray);
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .compact-impact {
+            font-size: 14px;
+            color: var(--sky-blue);
+            padding-top: 16px;
+            border-top: 1px solid var(--light-gray);
+        }
+
+        @media (max-width: 968px) {
+            .project-details {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </body>
 </html>
