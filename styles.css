@@ -99,6 +99,10 @@ body {
     color: var(--white);
 }
 
+.nav-link.contact-btn.active {
+    color: var(--white);
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
     padding: 120px 0 80px;

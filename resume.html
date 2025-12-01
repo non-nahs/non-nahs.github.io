@@ -6,17 +6,17 @@
     <title>Resume - Shannon Chieng</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="resume">
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Shannon Chieng</a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="resume.html" class="nav-link active">Resume</a></li>
-                <li><a href="contact.html" class="nav-link contact-btn">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-nav="home">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-nav="about">About</a></li>
+                <li><a href="case-studies.html" class="nav-link" data-nav="case-studies">Case Studies</a></li>
+                <li><a href="projects.html" class="nav-link" data-nav="projects">Projects</a></li>
+                <li><a href="resume.html" class="nav-link" data-nav="resume">Resume</a></li>
+                <li><a href="contact.html" class="nav-link contact-btn" data-nav="contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -267,7 +267,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Shannon Chieng. Built with focus and intention.</p>
+                <p>© <span id="year"></span> Shannon Chieng. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -516,5 +516,19 @@
             }
         }
     </style>
+    <script>
+        (function() {
+            var yearEl = document.getElementById('year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
+
+            var pageKey = document.body.dataset.page;
+            var activeLink = pageKey ? document.querySelector('.nav-link[data-nav=\"' + pageKey + '\"]') : null;
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+        })();
+    </script>
 </body>
 </html>
