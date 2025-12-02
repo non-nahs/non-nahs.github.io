@@ -48,7 +48,7 @@ body {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,6 +101,64 @@ body {
 
 .nav-link.contact-btn.active {
     color: var(--white);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.nav-toggle:focus-visible {
+    outline: 2px solid var(--sky-blue);
+    outline-offset: 2px;
+}
+
+.nav-toggle-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 28px;
+    height: 3px;
+    background: var(--dark-gray);
+    border-radius: 999px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+
+.nav-toggle-bar:nth-child(1) {
+    top: 10px;
+}
+
+.nav-toggle-bar:nth-child(2) {
+    top: 20px;
+}
+
+.nav-toggle-bar:nth-child(3) {
+    top: 30px;
+}
+
+.nav-toggle.is-open .nav-toggle-bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.nav-toggle.is-open .nav-toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.is-open .nav-toggle-bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 /* ===== HERO SECTION ===== */
@@ -392,33 +450,111 @@ body {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    .nav-menu {
-        gap: 16px;
-        font-size: 14px;
+@media (max-width: 1024px) {
+    .hero {
+        padding: 100px 0 70px;
     }
-    
+
     .hero-title {
-        font-size: 42px;
+        font-size: 52px;
     }
-    
+
     .hero-subtitle {
-        font-size: 24px;
+        font-size: 28px;
     }
-    
+
     .hero-description {
         font-size: 18px;
     }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .card {
+        padding: 28px;
+    }
+
+    .card-metrics {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+        padding: 0 24px;
+        column-gap: 12px;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        padding-top: 16px;
+    }
+
+    .nav-menu.is-open {
+        display: flex;
+    }
+    
+    .nav-link {
+        padding: 6px 0;
+    }
+
+    .nav-link.contact-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 70px 0 50px;
+    }
+    
+    .hero-title {
+        font-size: 38px;
+    }
+    
+    .hero-subtitle {
+        font-size: 22px;
+    }
+    
+    .hero-description {
+        font-size: 17px;
+    }
     
     .section-title {
-        font-size: 32px;
+        font-size: 30px;
     }
     
     .cards-grid {
         grid-template-columns: 1fr;
     }
-    
-    .hero {
-        padding: 80px 0 60px;
+
+    .card {
+        padding: 24px;
+    }
+
+    .card-metrics {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
     }
 }
